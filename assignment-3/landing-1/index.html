@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-weight: bold;
+    }
+
+    .upar {
+      position: fixed;
+      margin-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      width: 50rem;
+      left: 50%;
+      top: 15px;
+      transform: translateX(-50%);
+      padding: 8px;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+    }
+
+    .upar.scrolled {
+      width: 45rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border: none;
+      color: white;
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 956px) {
+      .box {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 100%; height: 2000px; display: flex; flex-direction: column; background-color: #120A0E; ">
+
+    <div class="upar">
+      <div style="display: flex; justify-content: center; align-items: center; gap: 4px;">
+        <div
+          style="padding: 6px;border-radius: 3px; background-color: #DA247F; display: flex; color: white; box-shadow: 0px 0px 2px  #DA247F;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+            class="size-5">
+            <path
+              d="M128,20A108,108,0,0,0,31.85,177.23L21,209.66A20,20,0,0,0,46.34,235l32.43-10.81A108,108,0,1,0,128,20Zm0,192a84,84,0,0,1-42.06-11.27,12,12,0,0,0-6-1.62,12.1,12.1,0,0,0-3.8.62l-29.79,9.93,9.93-29.79a12,12,0,0,0-1-9.81A84,84,0,1,1,128,212Z">
+            </path>
+          </svg>
+        </div>
+        <span>T3 Chat</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="skhr" style="text-decoration: none; color: white;">Pricing</a>
+        <a href="" style="text-decoration: none; color: white;">Testimonials</a>
+        <div href=""
+          style="padding: 10px; background-color: #A3004C; border-radius: 15px; display: flex; align-items: center; gap: 7px;">
+          <a href="" style="text-decoration: none; color: white;">Chat with T3</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256">
+            <path
+              d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <section class="pehla"
+      style="display: flex; flex-direction: column; margin-top: 160px; margin-inline: auto; align-items: center; ">
+      <div class="live"
+        style=" display: flex; gap: 4px; padding-block: 2px; font-size: 13px; width: 8rem; justify-content: center; align-items: center; border-radius: 6px; padding-inline: 0px; box-shadow: 0px 0px 1px rgba(256, 256, 256,6);   ">
+        <div style="width: 10px; border-radius: 100px; height: 10px; background-color: #9C0049;"></div>
+        <div>
+          Always up 24/7
+        </div>
+      </div>
+
+
+      <div style=" font-size: 40px; margin-top: 20px; width: 30rem; display: flex; justify-content: center;">
+        <span>Your Ordinary AI chat</span>
+
+      </div>
+      <div style="font-size: 40px; margin-top: 20px; width: 30rem; display: flex; justify-content: center;">
+        <span>app but with better UI/UX</span>
+
+      </div>
+
+      <p style="text-align: center; width: 23rem; font-size: 15px; margin-top: 16px;">T3 Chat is a fast , simple and
+        secure AI chat app that is built to make AI accesible to everyone</p>
+
+
+      <div style="display: flex; gap: 18px; margin-top: 3px;">
+        <button style="background-color: #A3004C;">Chat with T3</button>
+        <button style="background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">Send Feedback
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256">
+            <path
+              d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z">
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <div style="margin-top: 17px; font-size: 10px;">No credit card required to get started</div>
+
+
+
+
+
+
+
+    </section>
+
+
+    <section class="dusra"
+      style="width: 70rem; display: flex; margin-top: 20px; margin-inline: auto; justify-content: center;">
+      <div
+        style="position: absolute; width: 480px; border-radius: 100px; height: 480px;  left: 50%; transform: translateX(-50%); box-shadow: 0px 0px 100px rgba(101, 5, 49,10); background: radial-gradient(circle, rgba(218,36,127,1), transparent); filter: blur(10px);">
+      </div>
+      <div
+        style="width: 70rem; height: auto; background-color: #1B141A; margin-top: 40px; z-index: 1; padding: 7px; backdrop-filter: blur(10px); border-radius: 10px;">
+        <img src="t3-dash.webp" alt="lol" width="100%" height="100%">
+      </div>
+
+    </section>
+
+
+    <section class="teesra"
+      style=" display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <div
+        style="background-color: #A3004C; border-radius: 3px; padding-inline: 5px; padding-block: 3px; font-size: 12px;">
+        Features</div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2 style="padding: 0px; margin-bottom: 0px;">Features which everyone craves for</h2>
+        <p style="padding: 0px; margin-top: 5px;">We have created the most simpler way of using the AI chat which makes
+          it very use to use</p>
+      </div>
+      <div class="box" style="display: flex; gap: 26px; max-width: 970px;">
+        <div
+          style="width: 295px; height: 321px; background-color: #160F14; border-radius: 10px ; height: 321px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid white;">
+          <div
+            style="width: 48px; height: 48px; background: radial-gradient(circle, #930245, #6D0637); display: flex; justify-content: center; align-items: center; border-radius: 7px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+              class="size-6" aria-hidden="true">
+              <path
+                d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z">
+              </path>
+            </svg>
+
+          </div>
+          <h3>
+            Multi-Model Chat
+          </h3>
+          <p style="text-align: center; font-size: 15px;">
+            Talk to multiple AI models from different providers — all in one place.
+          </p>
+        </div>
+        <div
+          style="width: 295px; height: 321px; background-color: #160F14; border-radius: 10px ; height: 321px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid white;">
+          <div
+            style="width: 48px; height: 48px; background: radial-gradient(circle, #930245, #6D0637); display: flex; justify-content: center; align-items: center; border-radius: 7px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+              class="size-6" aria-hidden="true">
+              <path
+                d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z">
+              </path>
+            </svg>
+
+          </div>
+          <h3>
+            Sync & Sign-In
+          </h3>
+          <p style="text-align: center; font-size: 15px;">
+            Secure authentication with chat history saved across sessions.
+          </p>
+        </div>
+        <div
+          style="width: 295px; height: 321px; background-color: #160F14; border-radius: 10px ; height: 321px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid white;">
+          <div
+            style="width: 48px; height: 48px; background: radial-gradient(circle, #930245, #6D0637); display: flex; justify-content: center; align-items: center; border-radius: 7px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+              class="size-6" aria-hidden="true">
+              <path
+                d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z">
+              </path>
+            </svg>
+
+          </div>
+          <h3>
+            Web-First Experience
+          </h3>
+          <p style="text-align: center; font-size: 15px;">
+            No setup, no downloads — everything runs smoothly in your browser.
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section>
+      <div
+        style="display: flex; align-items: center; width: 100%; margin-top: 30px; flex-direction: column; background-color: #120A0E; ">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; ">
+          <span
+            style="border-radius: 3px; padding-inline: 5px; padding-block: 3px; font-size: 12px; background-color: #A3004C;">
+            Features </span>
+          <h1>Simple pricing</h1>
+          <p style="margin-top: 0px; padding-top: 0px; font-size: 13px;"> These are our most simple and affordable
+            pricing for thiss application</p>
+        </div>
+        <div class="chotha"
+          style="display: flex; width: 100%; padding: 10px; gap: 20px;  justify-content: center; ">
+          <!--  -->
+           <div style="display: flex; flex-direction: column; width: 260px; background-color: #2C2632; padding: 15px; border-radius: 10px;">
+            <h3>FREE</h3>
+            <div style="display: flex; align-items: end; gap: 2px;">
+              <span style="font-size: 50px; font-weight: 100;">$0</span>
+              <span style="font-weight: 100; margin-bottom: 2px; font-size: 12px; margin-bottom: 7px;">forever</span>
+            </div>
+            <p style="font-size: 13px;">Perfect for getting started with AI aggregation</p>
+
+            <div style="display: flex; flex-direction: column; margin-top: 5px; font-size: 13px; gap: 20px;">
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Access to 3 AI models</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic analytics</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+
+
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Standard response time</span>
+
+              </div>
+              <div style="display: flex; width: 100%; ">
+                <div
+                  style="margin-top:8px ; padding: 12px; background-color: #A3004C; display: flex; justify-content: center; width: 260px; border-radius: 10px;">
+                  <span>Get Started</span>
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!--  -->
+
+           <div style="display: flex; flex-direction: column; width: 260px; background-color:#A3004C; padding: 15px; border-radius: 10px;">
+            <h3>FREE</h3>
+            <div style="display: flex; align-items: end; gap: 2px;">
+              <span style="font-size: 50px; font-weight: 100;">$0</span>
+              <span style="font-weight: 100; margin-bottom: 2px; font-size: 12px; margin-bottom: 7px;">forever</span>
+            </div>
+            <p style="font-size: 13px;">Perfect for getting started with AI aggregation</p>
+
+            <div style="display: flex; flex-direction: column; margin-top: 5px; font-size: 13px; gap: 20px;">
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Access to 3 AI models</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic analytics</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+
+
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Standard response time</span>
+
+              </div>
+              <div style="display: flex; width: 100%; ">
+                <div
+                  style="margin-top:8px ; padding: 12px; background-color: #120A0E; display: flex; justify-content: center; width: 260px; border-radius: 10px;">
+                  <span>Get Started</span>
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <!--  -->
+
+           <div style="display: flex; flex-direction: column; width: 260px; background-color: #2C2632; padding: 15px; border-radius: 10px;">
+            <h3>FREE</h3>
+            <div style="display: flex; align-items: end; gap: 2px;">
+              <span style="font-size: 50px; font-weight: 100;">$0</span>
+              <span style="font-weight: 100; margin-bottom: 2px; font-size: 12px; margin-bottom: 7px;">forever</span>
+            </div>
+            <p style="font-size: 13px;">Perfect for getting started with AI aggregation</p>
+
+            <div style="display: flex; flex-direction: column; margin-top: 5px; font-size: 13px; gap: 20px;">
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Access to 3 AI models</span>
+
+              </div>
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic analytics</span>
+
+              </div>
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>100 queries per month</span>
+
+              </div>
+
+
+
+
+              <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5">
+                  <path
+                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+                <span>Standard response time</span>
+
+              </div>
+              <div style="display: flex; width: 100%; ">
+                <div
+                  style="margin-top:8px ; padding: 12px; background-color: #A3004C; display: flex; justify-content: center; width: 260px; border-radius: 10px; ">
+                  <span>Get Started</span>
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+         
+
+        </div>
+
+    </section>
+
+
+
+    <section class="fifth">
+      <div style="display: flex; width: 100%; flex-direction: column; background-color: #120A0E; align-items: center;  padding-block:20px ;">
+        <h1 style="width: 401px; text-align: center; margin-top: 10px;">Just Signup and write your first question to T3 :)</h1>
+        <span>We promise , we dont spam with useless mails</span>
+        <button style="background-color: #A3004C; margin-top: 20px;">Chat with T3</button>
+      </div>
+    </section>
+
+    <section class="chatha"  style="background-color: #120A0E ;">
+
+      <div style="display: flex; flex-direction: column;margin-left: 120px;">
+
+        <h1>Share Your Feedback</h1>
+        <p>We would love to hear your thoughts and suggestions. Your feedback helps us improve and create better experiences for everyone.</p>
+
+        <div style="display: flex; flex-direction: column;">
+          <label for="name" style="font-size: 13px; padding-block: 10px;">Your Name</label>
+          <input type="text" placeholder="John Doe" style="padding: 8px; background-color: #20171C; width: 60rem; border: none;  box-shadow: 0px 0px 1px rgba(256, 256, 256,1);">
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-top: 10px;">
+          <label for="name" style="font-size: 13px; padding-block: 10px;">Your Message</label>
+          <input type="text" placeholder="Share Your Thoughts with us..." style="padding-top: 2px; padding-bottom: 26px; background-color: #20171C; width: 60rem; padding-right: 14px; border: none;  box-shadow: 0px 0px 1px rgba(256, 256, 256,1);">
+        </div>
+
+        <div style="width: 100% ; display: flex; justify-content: center; margin-top: 20px;">
+          <div style="margin-right: 100px;">
+            <button style="padding: 20px; border-radius: 10px; width: 640px; background-color: #A3004C;">Submit Feedback</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+    <section style="display: flex; justify-content: center; background-color: #120A0E; padding-block: 50px; ">
+      <div style="display: flex; justify-content: center; flex-direction: column; background-color: #1B141A; width: 65rem; box-shadow: 0px 0px 1px rgba(256, 256, 256,1); border-radius: 10px; margin-top: 20px; padding-block: 30px;">
+        <div style="background-color: #A3004C; border-radius: 4px; padding: 8px; width: 20px; height: 17px; display: flex; justify-content: center; box-shadow: 0px 2px 4px rgba(163, 0, 76, 0.4);margin-top: 20px; margin-inline: auto;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="size-5"><path d="M128,20A108,108,0,0,0,31.85,177.23L21,209.66A20,20,0,0,0,46.34,235l32.43-10.81A108,108,0,1,0,128,20Zm0,192a84,84,0,0,1-42.06-11.27,12,12,0,0,0-6-1.62,12.1,12.1,0,0,0-3.8.62l-29.79,9.93,9.93-29.79a12,12,0,0,0-1-9.81A84,84,0,1,1,128,212Z"></path></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <h1 style=" font-size: 20px;">T3Chat</h1>
+        <div style=" font-size: 13px;">Copyright © 2025</div>
+
+        </div>
+        
+
+      </div>      
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>

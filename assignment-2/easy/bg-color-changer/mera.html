@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg-changer</title>
+  <style>
+    body,html {
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      
+    }
+    button {
+      padding-inline: 10px;
+      padding-block: 3px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.5);
+      transition: all linear;
+
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; width: 100%; height: 100%; justify-content: center; align-items: end;">
+    <div
+      style=" margin-bottom: 30px; display: flex; border: none; padding: 6px; gap: 6px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); justify-content: center; width: 37rem; border-radius: 10px; background-color: white;">
+      <div><button style="background-color: red; font-size: 20px ;" class="red">Red</button></div>
+      <div><button style="background-color: yellow; font-size: 20px ; " class="yellow">Yellow</button></div>
+      <div><button style="background-color: black;color: white; font-size: 20px ; " class="black">Black</button></div>
+      <div><button style="background-color: purple; color: white;  font-size: 20px ;background-color: purple; " class="purple">Purple</button></div>
+      <div><button style="background-color: green; font-size: 20px ; " class="green">Green</button></div>
+      <div><button style="background-color: blue; font-size: 20px ; " class="blue">Blue</button></div>
+      <div><button style="background-color: orange; font-size: 20px ;" class="default">Default</button></div>
+    </div>
+  </div>
+
+  <script src="mera.js"></script>
+
+
+</body>
+
+</html>
