@@ -1,0 +1,133 @@
+{
+  "web": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Hyper Transfer Markup Language",
+        "High Text Markup Language",
+        "Hyper Text Machine Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "Which CSS property changes text color?",
+      "options": [
+        "font-color",
+        "color",
+        "text-color",
+        "background-color"
+      ],
+      "answer": "color"
+    },
+    {
+      "question": "Which JavaScript method is used to select an element by ID?",
+      "options": [
+        "querySelector",
+        "getElementByClass",
+        "getElementById",
+        "selectElement"
+      ],
+      "answer": "getElementById"
+    }
+  ],
+
+  "dsa": [
+    {
+      "question": "Which data structure follows LIFO?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Tree"
+      ],
+      "answer": "Stack"
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "answer": "O(log n)"
+    },
+    {
+      "question": "Which traversal visits Root, Left, Right?",
+      "options": [
+        "Inorder",
+        "Postorder",
+        "Preorder",
+        "Level Order"
+      ],
+      "answer": "Preorder"
+    }
+  ],
+
+  "ai": [
+    {
+      "question": "What does ML stand for?",
+      "options": [
+        "Machine Learning",
+        "Model Learning",
+        "Machine Logic",
+        "Modern Learning"
+      ],
+      "answer": "Machine Learning"
+    },
+    {
+      "question": "Which library is commonly used for Machine Learning in Python?",
+      "options": [
+        "NumPy",
+        "Scikit-learn",
+        "Flask",
+        "Requests"
+      ],
+      "answer": "Scikit-learn"
+    },
+    {
+      "question": "What is overfitting?",
+      "options": [
+        "Model performs well on training data but poorly on new data",
+        "Model is too simple",
+        "Model has fewer features",
+        "Model cannot learn"
+      ],
+      "answer": "Model performs well on training data but poorly on new data"
+    }
+  ],
+
+  "cyber": [
+    {
+      "question": "What does VPN stand for?",
+      "options": [
+        "Virtual Private Network",
+        "Verified Public Network",
+        "Virtual Protected Node",
+        "Variable Private Network"
+      ],
+      "answer": "Virtual Private Network"
+    },
+    {
+      "question": "Which attack attempts to trick users into revealing information?",
+      "options": [
+        "SQL Injection",
+        "Phishing",
+        "DDoS",
+        "Brute Force"
+      ],
+      "answer": "Phishing"
+    },
+    {
+      "question": "What does HTTPS provide?",
+      "options": [
+        "Compression",
+        "Encryption",
+        "Storage",
+        "Authentication only"
+      ],
+      "answer": "Encryption"
+    }
+  ]
+}

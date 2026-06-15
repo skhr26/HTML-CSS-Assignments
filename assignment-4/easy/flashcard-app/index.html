@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function send() {
+      const num=document.getElementById('num').value;
+      const topic=document.getElementById('city').value;
+      localStorage.setItem("topic", topic);
+localStorage.setItem("num", num);
+window.location.href = "card.html";      
+    }
+  </script>
+</head>
+
+<body style="width: 100vw; height: 100vh;">
+
+
+
+  <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+    <h1 style=" text-align: center; font-family: sans-serif;">Flash Card Learning Game</h1>
+
+
+
+  
+  
+
+  <div
+    style="background-color: rgb(176, 176, 219); width: 40rem; margin: auto; padding: 20px ; display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center; height: 20rem; font-size: large;">
+
+    <div class="select-topic">
+
+      <label for="city">Choose a Topic:</label>
+      <select id="city" name="city">
+        <option value="web">Web Development</option>
+        <option value="ai">AI/ML</option>
+        <option value="dsa">DSA</option>
+        <option value="cyber">Cyber Security</option>
+      </select>
+    </div>
+    <div>
+
+      <input id="num" type="number" placeholder="How many questions">
+
+    </div>
+    <button onclick="send()">Submit</button>
+  </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+
+</head>
+
+<body onload="render()" style="width: 100vw; height: 100vh; ">
+  <div
+    style="height: 100%; width: 100%; background-color: green; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div id="patta"
+      style="background-color: red; border-radius: 12px; width: 19rem; height: 25rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+
+      <!-- <button >Ok</button> -->
+    </div>
+  </div>
+
+
+
+
+  <script>
+
+    const topic = localStorage.getItem('topic');
+    const num = localStorage.getItem('num');
+    let score = 0;
+    let currentQuestion = 0;
+    console.log(score);
+    async function render() {
+      const response = await fetch("./questions.json");
+      const data = await response.json();
+      // data agya 
+
+      const patta = document.getElementById('patta');
+
+      // yaanni card le liya hai
+      // initiallly this is what we wanted out of this 
+      patta.innerHTML = `
+  <div id="sawaal"></div>
+`;
+
+      // thoda change kardiya hai
+      // added question
+      document.getElementById('sawaal').innerHTML = data[topic][currentQuestion].question;
+
+      // ab option ki baari
+
+
+      // dynamially adding the data 
+      data[topic][currentQuestion].options.map(option => {
+        const but = document.createElement('button');
+        but.innerHTML = option;
+        but.onclick = () => {
+          alert(option);
+          if (option === data[topic][currentQuestion].answer) {
+            score++;
+          }
+          currentQuestion++;
+          if (currentQuestion >= num) {
+
+          localStorage.setItem("score", score);
+          localStorage.setItem("total", num);
+
+          window.location.href = "Result.html";
+          return;
+        }
+          render();
+        };
+        patta.appendChild(but);
+
+      })
+
+
+    }
+
+  </script>
+</body>
+
+</html>
